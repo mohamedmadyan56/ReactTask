@@ -1,0 +1,33 @@
+.A
+{
+  position: relative;
+  transition: all .1s ;
+  overflow: hidden;
+}
+.II
+{
+  opacity: 0;
+  z-index: 2;
+  overflow: hidden;
+}
+.A::after
+{
+  content: ""; 
+  text-align: center;
+  position:absolute;
+  width: 100%;
+  height: auto;
+  inset: 0;
+  opacity: 0;
+  transition: all .1s;
+}
+.A:hover.A::after
+{
+  opacity: 1;
+}
+
+.A:hover .II
+{
+  opacity: 1;
+ 
+}
